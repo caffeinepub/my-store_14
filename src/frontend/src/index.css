@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    /* Page background: pale blush #F3DDDA */
+    --background: 0.912 0.028 18;
+    --foreground: 0.22 0.03 35;
+    /* Card: off-white #FAF6F3 */
+    --card: 0.972 0.012 60;
+    --card-foreground: 0.22 0.03 35;
+    --popover: 0.972 0.012 60;
+    --popover-foreground: 0.22 0.03 35;
+    /* Primary gold: #C6A24B */
+    --primary: 0.718 0.115 75;
+    --primary-foreground: 0.15 0.025 35;
+    /* Secondary: warm light blush */
+    --secondary: 0.94 0.018 20;
+    --secondary-foreground: 0.22 0.03 35;
+    /* Muted */
+    --muted: 0.95 0.015 30;
+    --muted-foreground: 0.47 0.03 35;
+    /* Accent: deep warm brown */
+    --accent: 0.88 0.025 25;
+    --accent-foreground: 0.27 0.04 35;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    /* Border: warm light gray-beige #D9C9C2 */
+    --border: 0.82 0.025 35;
+    --input: 0.82 0.025 35;
+    --ring: 0.718 0.115 75;
+    /* Announcement bar: muted gold/warm */
+    --announcement: 0.72 0.095 75;
+    --announcement-foreground: 0.15 0.025 35;
+    /* Header: slightly lighter blush #F7E9E5 */
+    --header: 0.942 0.018 18;
+    /* Footer: blush matching background */
+    --footer: 0.88 0.03 18;
+    --footer-foreground: 0.27 0.04 35;
+    /* Deep warm brown for headings */
+    --heading: 0.27 0.04 35;
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.972 0.012 60;
+    --sidebar-foreground: 0.22 0.03 35;
+    --sidebar-primary: 0.718 0.115 75;
+    --sidebar-primary-foreground: 0.15 0.025 35;
+    --sidebar-accent: 0.94 0.018 20;
+    --sidebar-accent-foreground: 0.22 0.03 35;
+    --sidebar-border: 0.82 0.025 35;
+    --sidebar-ring: 0.718 0.115 75;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "DM Sans", sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Playfair Display", serif;
+  }
+}
